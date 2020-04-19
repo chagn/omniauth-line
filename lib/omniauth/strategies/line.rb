@@ -20,7 +20,7 @@ module OmniAuth
       end
 
       uid { raw_info['userId'] }
-
+      open_id {access_token.open_id}
       info do
         {
           name:        raw_info['displayName'],
